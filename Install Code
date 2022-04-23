@@ -387,6 +387,38 @@ echo -                                                                          
 echo -                                         (c)Marc_Beast                                                 -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 Timeout 15 /nobreak >nul 2>&1
+title DirectX wird Installiert
+cls
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                            DirectX                                                    -
+echo -                                                                                                       -
+echo -                                        wird Installiert                                               -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                      Dauer: ca. 1 minute                                              -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                         (c)Marc_Beast                                                 -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo [%time% ] - DirectX wird installiert >>"%userprofile%\Downloads\VC Install Log.log"
+echo - >>"%userprofile%\Downloads\VC Install Log.log"
+DirectX_Installer.exe /q
+echo [%time% ] - DirectX wurde installiert -- Erweiteter Instalations Log befindet sich in: "C:\Windows\DirectX.log">>"%userprofile%\Downloads\VC Install Log.log"
+echo - >>"%userprofile%\Downloads\VC Install Log.log"
 title Abgeschlossen!
 color 2
 cls
@@ -403,9 +435,9 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
+echo -                                           und DirectX                                                 -
 echo -                                                                                                       -
 echo -                                    Instalation abgeschlossen                                          -
-echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -445,6 +477,15 @@ echo - >>"%userprofile%\Downloads\VC Install Log.log"
 del VC_32_2022.exe
 echo [%time% ] - "VC_32_2022.exe" wird gelöscht >>"%userprofile%\Downloads\VC Install Log.log"
 echo - >>"%userprofile%\Downloads\VC Install Log.log"
+del DirectX_Installer.exe
+echo [%time% ] - "DirectX_Installer.exe" wird gelöscht >>"%userprofile%\Downloads\VC Install Log.log"
+echo - >>"%userprofile%\Downloads\VC Install Log.log"
+del install.bat >nul 2>&1
+echo [%time% ] - "Install.bat" wird gelöscht >>"%userprofile%\Downloads\VC Install Log.log"
+echo - >>"%userprofile%\Downloads\VC Install Log.log"
+del "C:\Users\Public\Downloads\VC\start.bat" >nul 2>&1
+echo [%time% ] - "Start.bat" wird gelöscht >>"%userprofile%\Downloads\VC Install Log.log"
+echo - >>"%userprofile%\Downloads\VC Install Log.log"
 echo [%time% ] - Die Instalation wurde am %Date% um %time% Abgeschlossen >>"%userprofile%\Downloads\VC Install Log.log"
 echo -                                         - >>"%userprofile%\Downloads\VC Install Log.log"
 echo -                  LOG ENDE               - >>"%userprofile%\Downloads\VC Install Log.log"
@@ -454,3 +495,4 @@ echo -                                         - >>"%userprofile%\Downloads\VC I
 echo -   Support: https://github.com/MarcBeast - >>"%userprofile%\Downloads\VC Install Log.log"
 echo -                                         - >>"%userprofile%\Downloads\VC Install Log.log"
 Pause
+exit
