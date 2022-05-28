@@ -44,11 +44,19 @@ echo [%time% ] - Visual C++ 2022 x32 wird heruntergeladen >>"%userprofile%\Downl
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title 20 Prozent
 powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://aka.ms/highdpimfc2013x64deu','c:\users\public\downloads\VC\VC_64_2013.exe')
-echo [%time% ] - Visual C++ 2013 x64 wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C++ 2013 x64 -Deutsch- wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title 25 Prozent
+powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://aka.ms/highdpimfc2013x64enu','c:\users\public\downloads\VC\VC_64_2013_en.exe')
+echo [%time% ] - Visual C++ 2013 x64 -Englisch- wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title 30 Prozent
 powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://aka.ms/highdpimfc2013x86deu','c:\users\public\downloads\VC\VC_32_2013.exe')
-echo [%time% ] - Visual C++ 2013 x32 wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C++ 2013 x32 -Deutsch- wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title 35 Prozent
+powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://aka.ms/highdpimfc2013x86enu','c:\users\public\downloads\VC\VC_32_2013_en.exe')
+echo [%time% ] - Visual C++ 2013 x32 -Englisch- wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title 40 Prozent
 powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://download.microsoft.com/download/A/3/7/A371A2C7-B787-4AD9-B56D-8319CE7B40CA/VSU4/vcredist_x64.exe','c:\users\public\downloads\VC\VC_64_2012.exe')
