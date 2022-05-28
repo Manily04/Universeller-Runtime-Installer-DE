@@ -31,7 +31,6 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                         (c)Marc_Beast                                                 -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =               DOWNLOAD BEGINNT          = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -113,19 +112,16 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                         (c)Marc_Beast                                                 -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-
 powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://download.microsoft.com/download/1/7/1/1718CCC4-6315-4D8E-9543-8E28A4E18C4C/dxwebsetup.exe','c:\users\public\downloads\VC\DirectX_Installer.exe')
 echo [%time% ] - DirectX wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://aka.ms/directx_x64_appx','c:\users\public\downloads\VC\DirectX_UWP.appx')
 echo [%time% ] - DirectX UWP wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =            DOWNLOAD ABGESCHLOSSEN       = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-
 copy "install.bat" C:\Users\Public\Downloads\VC >nul 2>&1
 echo [%time% ] - vc install.bat wurde nach c:\Users\Public\Downloads\VC Kopiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -138,5 +134,3 @@ echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del start.bat
 echo [%time% ] - Die originale "start.bat" Datei wurde gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-
-
