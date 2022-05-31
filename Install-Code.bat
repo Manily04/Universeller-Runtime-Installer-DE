@@ -27,7 +27,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 title Fortschritt: 0 Prozent
 cls
@@ -56,7 +56,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_64_2008.exe /q /norestart
 echo [%time% ] - Visual C Redist 2008 x64 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -88,7 +88,7 @@ echo -  ==========                                                              
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_32_2008.exe /q /norestart
 echo [%time% ] - Visual C Redist 2008 x32 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -120,7 +120,7 @@ echo -  ====================                                                    
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_64_2010.exe /q /norestart
 echo [%time% ] - Visual C Redist 2010 x64 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -152,7 +152,7 @@ echo -  ==============================                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_32_2010.exe /q /norestart
 echo [%time% ] - Visual C Redist 2010 x32 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -184,7 +184,7 @@ echo -  ========================================                                
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_64_2012.exe /q /norestart
 echo [%time% ] - Visual C Redist 2012 x64 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -216,14 +216,46 @@ echo -  ==================================================                      
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_32_2012.exe /q /norestart
 echo [%time% ] - Visual C Redist 2012 x32 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Fortschritt: 55 Prozent
+cls
+echo [%time% ] - Visual C Redist 2013 x64 -Deutsch- wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                      Visual Studio Runtime                                            -
+echo -                                                                                                       -
+echo -                                        wird Installiert                                               -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                          Fortschritt:                                                 -
+echo -  0                                                                                               100  - 
+echo -  =======================================================                                              -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+C:\Users\Public\Downloads\VC\VC_64_2013.exe /q /norestart
+echo [%time% ] - Visual C Redist 2013 x64 -Deutsch- wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title Fortschritt: 60 Prozent
 cls
-echo [%time% ] - Visual C Redist 2013 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C Redist 2013 x32 -Deutsch- wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -248,14 +280,46 @@ echo -  ============================================================            
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-C:\Users\Public\Downloads\VC\VC_64_2013.exe /q /norestart
-echo [%time% ] - Visual C Redist 2013 x64 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
+C:\Users\Public\Downloads\VC\VC_32_2013.exe /q /norestart
+echo [%time% ] - Visual C Redist 2013 x32 -Deutsch- wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Fortschritt: 65 Prozent
+cls
+echo [%time% ] - Visual C Redist 2013 x64 -Englisch- wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                      Visual Studio Runtime                                            -
+echo -                                                                                                       -
+echo -                                        wird Installiert                                               -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                          Fortschritt:                                                 -
+echo -  0                                                                                               100  - 
+echo -  =================================================================                                    -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+C:\Users\Public\Downloads\VC\VC_64_2013_en.exe /q /norestart
+echo [%time% ] - Visual C Redist 2013 x64 -Englisch- wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title Fortschritt: 70 Prozent
 cls
-echo [%time% ] - Visual C Redist 2013 x32 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C Redist 2013 x32 -Englisch- wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -280,10 +344,10 @@ echo -  ======================================================================  
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-C:\Users\Public\Downloads\VC\VC_32_2013.exe /q /norestart
-echo [%time% ] - Visual C Redist 2013 x32 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
+C:\Users\Public\Downloads\VC\VC_32_2013_en.exe /q /norestart
+echo [%time% ] - Visual C Redist 2013 x32 -Englisch- wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title Fortschritt: 80 Prozent
 cls
@@ -312,7 +376,7 @@ echo -  ========================================================================
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_64_2022.exe /q /norestart
 echo [%time% ] - Visual C Redist 2022 x64 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -344,7 +408,7 @@ echo -  ========================================================================
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_32_2022.exe /q /norestart
 echo [%time% ] - Visual C Redist 2022 x32 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -374,7 +438,7 @@ echo -  ========================================================================
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 Timeout 4 /nobreak >nul 2>&1
 title Visual C++ UWP
@@ -402,7 +466,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_110_UWP.exe /q /norestart
 echo [%time% ] - Visual C++ UWP Runtime v11.0 wird extrahiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -432,7 +496,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_120_UWP.exe /q /norestart
 echo [%time% ] - Visual C++ UWP Runtime v12.0 wird extrahiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -462,7 +526,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - Visual C++ UWP Runtime v11.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -493,7 +557,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - Visual C++ UWP Runtime v12.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -524,7 +588,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - Visual C++ UWP Runtime v14.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -556,7 +620,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - DirectX UWP Runtime wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -588,7 +652,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - DirectX wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -620,7 +684,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         (c)Marc_Beast                                                 -
+echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -657,6 +721,12 @@ echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\VC_32_2013.exe >nul 2>&1
 echo [%time% ] - "VC_32_2013.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\VC_64_2013_en.exe >nul 2>&1
+echo [%time% ] - "VC_64_2013_en.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\VC_32_2013_en.exe >nul 2>&1
+echo [%time% ] - "VC_32_2013_en.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\VC_64_2022.exe >nul 2>&1
 echo [%time% ] - "VC_64_2022.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -686,9 +756,9 @@ echo [%time% ] - Die Instalation wurde am %Date% um %time% Abgeschlossen >>"%use
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                 LOG ENDE                - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -                Marc_Beast               - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -                  Manily                 - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -  Support: https://github.com/MarcBeast  - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -  Support: https://github.com/Manily04   - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 Copy "%userprofile%\Downloads\Runtime installer Log.log" "%temp%" >nul 2>&1
 Pause
