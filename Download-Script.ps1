@@ -1,4 +1,5 @@
 @echo off
+chcp 850
 echo [%time% ] - log start >"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 mkdir C:\Users\Public\Downloads\VC >nul 2>&1
@@ -18,9 +19,9 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                  Voraussetzung zur Installation                                       -
+echo -                                 Voraussetzungen zur Installation                                      -
 echo -                                                                                                       -
-echo -                                       wird heruntergeladen                                            -
+echo -                                      werden heruntergeladen                                           -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -37,7 +38,8 @@ echo =                                         = >>"%userprofile%\Downloads\Runt
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo [%time% ] - Voraussetzung zur Instalation wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/Universeller-Runtime-Installer-DE/raw/main/DesktopAppInstaller.Msixbundle','c:\users\public\downloads\VC\DesktopInstaller.msixbundle')
+powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/Universeller-Runtime-Installer-DE/raw/main/DesktopInstaller.appx','c:\users\public\downloads\VC\DesktopInstaller.Appx')
+powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/Universeller-Runtime-Installer-DE/raw/main/MicrosoftUI.Appx','c:\users\public\downloads\VC\MicrosoftUI.Appx')
 cls
 title VC Runtime wird heruntergeladen
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -65,7 +67,6 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-
 powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe','c:\users\public\downloads\VC\VC_110_UWP.exe')
 echo [%time% ] - Visual C++ Runtime v11.0 UWP wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
