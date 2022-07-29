@@ -63,13 +63,13 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                             Um die Installation zu erm”glichen mssen sie den                         -
+echo -                             Um die Installation zu ermöglichen müssen sie den                         -
 echo -                                                                                                       -
-echo -                    allgemeine Gesch„ftsbedingungen (AGB) von Winget (Microsoft) akzeptieren          -
+echo -                    allgemeine Geschäftsbedingungen (AGB) von Winget (Microsoft) akzeptieren          -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                      Dazu bitte Y auf ihrer Tastatur drcken und mit Enter best„tigen                 -
+echo -                      Dazu bitte Y auf ihrer Tastatur drücken und mit Enter bestätigen                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -712,22 +712,22 @@ echo =             CLEANUP BEGINNT             = >>"%userprofile%\Downloads\Runt
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\VC_110_UWP.exe >nul 2>&1
-echo [%time% ] - "VC_110_UWP.exe" wird gel”scht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - "VC_110_UWP.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\VC_120_UWP.exe >nul 2>&1
-echo [%time% ] - "VC_120_UWP.exe" wird gel”scht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - "VC_120_UWP.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\VC_140_UWP.appx >nul 2>&1
-echo [%time% ] - "VC_140_UWP.appx" wird gel”scht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - "VC_140_UWP.appx" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\DirectX_UWP.appx >nul 2>&1
-echo [%time% ] - "DirectX_UWP.appx" wird gel”scht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - "DirectX_UWP.appx" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\oalinst.exe >nul 2>&1
-echo [%time% ] - "oalinst.exe" wird gel”scht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - "oalinst.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\DesktopInstaller.msixbundle >nul 2>&1
-echo [%time% ] - "DesktopInstaller.msixbundle" wird gel”scht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - "DesktopInstaller.msixbundle" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =           CLEANUP ABGESCHLOSSEN         = >>"%userprofile%\Downloads\Runtime installer Log.log"
