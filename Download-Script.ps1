@@ -37,9 +37,7 @@ echo =                                         = >>"%userprofile%\Downloads\Runt
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo [%time% ] - Voraussetzung zur Instalation wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/VC-Runtime-und-DirectX-all-in-one-Installer/raw/main/DesktopAppInstaller.Msixbundle','c:\users\public\downloads\VC\DesktopInstaller.msixbundle')
-echo [%time% ] - Voraussetzung zur Instalation wurde erfolgreich heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/Universeller-Runtime-Installer-DE/raw/main/DesktopAppInstaller.Msixbundle','c:\users\public\downloads\VC\DesktopInstaller.msixbundle')
 cls
 title VC Runtime wird heruntergeladen
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -105,7 +103,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/VC-Runtime-und-DirectX-all-in-one-Installer/raw/main/oalinst.exe','C:\Users\Public\Downloads\VC\oalinst.exe')
+powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/Universeller-Runtime-Installer-DE/raw/main/oalinst.exe','C:\Users\Public\Downloads\VC\oalinst.exe')
 echo [%time% ] - OpenAL wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title DirectX wird heruntergeladen
