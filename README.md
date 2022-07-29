@@ -1,4 +1,4 @@
-# Universeller-Runtime-Installer
+# Universeller Runtime Installer
 Dieser Installer erlaubt es, die neusten Visual C++ Runtime aller Jahre (2008-2022), die Komplette DirectX Runtime, Microsoft XNA Framework und OpenAL auf einmal zu installieren.
 
 ## Updates
