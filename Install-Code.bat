@@ -313,7 +313,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-powershell -c winget install Microsoft.VC++2012Redist-x86
+powershell -c winget install Microsoft.VC++2013Redist-x86
 echo [%time% ] - Visual C Redist 2013 x32 wurde installiert -- Erweiteter installations Log befindet sich in: "%temp%">>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title Fortschritt: 65 Prozent
@@ -594,6 +594,8 @@ echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Users\Public\Downloads\VC\DirectX_UWP.appx'
 echo [%time% ] - DirectX UWP Runtime wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+cls
+title Microsoft XNA Framework
 echo [%time% ] - Microsoft XNA Framework wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -694,42 +696,6 @@ echo =                                         = >>"%userprofile%\Downloads\Runt
 echo =             CLEANUP BEGINNT             = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_64_2008.exe >nul 2>&1
-echo [%time% ] - "VC_64_2008.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_32_2008.exe >nul 2>&1
-echo [%time% ] - "VC_32_2008.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_64_2010.exe >nul 2>&1
-echo [%time% ] - "VC_64_2010.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_32_2010.exe >nul 2>&1
-echo [%time% ] - "VC_32_2010.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_64_2012.exe >nul 2>&1
-echo [%time% ] - "VC_64_2012.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_32_2012.exe >nul 2>&1
-echo [%time% ] - "VC_32_2012.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_64_2013.exe >nul 2>&1
-echo [%time% ] - "VC_64_2013.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_32_2013.exe >nul 2>&1
-echo [%time% ] - "VC_32_2013.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_64_2013_en.exe >nul 2>&1
-echo [%time% ] - "VC_64_2013_en.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_32_2013_en.exe >nul 2>&1
-echo [%time% ] - "VC_32_2013_en.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_64_2022.exe >nul 2>&1
-echo [%time% ] - "VC_64_2022.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\VC_32_2022.exe >nul 2>&1
-echo [%time% ] - "VC_32_2022.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\VC_110_UWP.exe >nul 2>&1
 echo [%time% ] - "VC_110_UWP.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -742,8 +708,11 @@ echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\DirectX_UWP.appx >nul 2>&1
 echo [%time% ] - "DirectX_UWP.appx" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\DirectX_Installer.exe >nul 2>&1
-echo [%time% ] - "DirectX_Installer.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\oalinst.exe >nul 2>&1
+echo [%time% ] - "oalinst.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\DesktopInstaller.msixbundle >nul 2>&1
+echo [%time% ] - "DesktopInstaller.msixbundle" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =           CLEANUP ABGESCHLOSSEN         = >>"%userprofile%\Downloads\Runtime installer Log.log"
