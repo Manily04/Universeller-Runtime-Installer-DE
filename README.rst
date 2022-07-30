@@ -12,11 +12,11 @@ Dieser Installer erlaubt es, die neusten Visual C++ Runtime aller Jahre (2008-20
 
 Updates
 ===============================
-Die [neuste Version](https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest) lädt alle runtimes selstständig herunter, heisst, es wird beim ausführen des Tools immer die neuste verfügbare Version der Runtime installiert. (Eine Internet verbindung ist für [versionen über v4](https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest) vorrausgesetzt)
+Die `neuste Version <https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest>`_ lädt alle runtimes selstständig herunter, heisst, es wird beim ausführen des Tools immer die neuste verfügbare Version der Runtime installiert. (Eine Internet verbindung ist für `versionen über v4 <https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest>`_ vorrausgesetzt)
 
 Offline Setup
 ===============================
-Wenn man an dem zu installierenden PC keine internet verbindung hat, kann man die [`v3`](https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/tag/v3) verwenden, da sie noch alle Runtimes im installer hat - Update Stand der [`v3`](https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/tag/v3): April 2022
+Wenn man an dem zu installierenden PC keine internet verbindung hat, kann man die `v3 <https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/tag/v3>`__ verwenden, da sie noch alle Visual Studio 2008 - 2022 Runtimes im installer hat, jedoch keine weitere - Update Stand der  `v3 <https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/tag/v3>`_ April 2022
 
 Log
 ---------
