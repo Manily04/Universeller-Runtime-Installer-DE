@@ -1144,7 +1144,7 @@ del C:\Users\Public\Downloads\VC\VC_120_UWP.exe >nul 2>&1
 echo [%time% ] - "VC_120_UWP.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\VC_140_UWP.appx >nul 2>&1
-echo [%time% ] - "VC_140_UWP.appx" wird gel÷scht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - "VC_140_UWP.appx" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\DirectX_UWP.appx >nul 2>&1
 echo [%time% ] - "DirectX_UWP.appx" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
