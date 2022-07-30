@@ -22,7 +22,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                             Um die Installation zu ermöglichen müssen sie den                         -
 echo -                                                                                                       -
-echo -                    allgemeine Geschäftsbedingungen (AGB) von Winget (Microsoft) akzeptieren          -
+echo -                    allgemeine Geschäftsbedingungen (AGB) von Winget (Microsoft) akzeptieren           -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -35,7 +35,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget search Microsoft
+winget search 112
 echo [%time% ] - Geschõftsbedinungen Wurden zugestimmt >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
@@ -707,7 +707,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= XNA Framework Installieren [J] Überspringen [N]
+set /P c= XNA Framework Installieren [J] Überspringen [N] :
 if /I "%c%" EQU "J" goto :XNA
 if /I "%c%" EQU "N" goto :XNANo
 goto :XNAchoice
@@ -716,6 +716,7 @@ echo [%time% ] - Microsoft XNA Framework wird nicht installiert >>"%userprofile%
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :Net5choice
 :XNA
+title Microsoft XNA Framework wird installiert
 cls
 echo [%time% ] - Microsoft XNA Framework wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -776,7 +777,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 5 [J] Überspringen [N]
+set /P c= Microsoft .Net Desktop Runtime 5 [J] Überspringen [N] :
 if /I "%c%" EQU "J" goto :Net5
 if /I "%c%" EQU "N" goto :Net5no
 goto :Net5choice
@@ -785,6 +786,7 @@ echo [%time% ] - Microsoft .Net Desktop Runtime 5 wird nicht installiert >>"%use
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :Net6choice
 :Net5
+title Microsoft .Net Desktop Runtime 5 wird installiert
 cls
 echo [%time% ] - Microsoft .Net Desktop Runtime 5 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -845,7 +847,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 6 [J] Überspringen [N]
+set /P c= Microsoft .Net Desktop Runtime 6 [J] Überspringen [N] :
 if /I "%c%" EQU "J" goto :Net6
 if /I "%c%" EQU "N" goto :Net6no
 goto :Net6choice
@@ -854,6 +856,7 @@ echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird nicht installiert >>"%use
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :DirectXchoice
 :Net6
+title Microsoft .Net Desktop Runtime 6 wird installiert
 cls
 echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -914,7 +917,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= DirectX Installieren [J] Überspringen [N]
+set /P c= DirectX Installieren [J] Überspringen [N] :
 if /I "%c%" EQU "J" goto :DirectX
 if /I "%c%" EQU "N" goto :DirectXno
 goto :DirectXchoice
@@ -956,7 +959,7 @@ winget install Microsoft.DirectX
 echo [%time% ] - DirectX wurde installiert -- Erweiteter installations Log befindet sich in: "C:\Windows\DirectX.log">>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :JavaChoice
-title DirectX
+title Java
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -983,7 +986,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Java Installieren [J] Überspringen [N]
+set /P c= Java Installieren [J] Überspringen [N] :
 if /I "%c%" EQU "J" goto :Java
 if /I "%c%" EQU "N" goto :Javano
 goto :JavaChoice
@@ -1052,7 +1055,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= OpenAL Installieren [J] Überspringen [N]
+set /P c= OpenAL Installieren [J] Überspringen [N] :
 if /I "%c%" EQU "J" goto :OpenAL
 if /I "%c%" EQU "N" goto :OpenALno
 goto :OpenALchoice
@@ -1105,7 +1108,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                                     Instalation abgeschlossen                                         -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1113,12 +1116,12 @@ echo -                                                                          
 echo -                                   Alle Runtimes wurden Installiert                                    -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                    Instalation abgeschlossen                                          -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
+echo -                                Du kannst deinen PC jetzt neustarten [J]                               -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                                         Oder spõter [N]                                               -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
@@ -1141,7 +1144,7 @@ del C:\Users\Public\Downloads\VC\VC_120_UWP.exe >nul 2>&1
 echo [%time% ] - "VC_120_UWP.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\VC_140_UWP.appx >nul 2>&1
-echo [%time% ] - "VC_140_UWP.appx" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - "VC_140_UWP.appx" wird gel÷scht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\DirectX_UWP.appx >nul 2>&1
 echo [%time% ] - "DirectX_UWP.appx" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -1149,7 +1152,9 @@ echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC\oalinst.exe >nul 2>&1
 echo [%time% ] - "oalinst.exe" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC\DesktopInstaller.msixbundle >nul 2>&1
+del C:\Users\Public\Downloads\VC\install.bat >nul 2>&1
+echo [%time% ] - "install.bat" wird gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =           CLEANUP ABGESCHLOSSEN         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -1163,7 +1168,7 @@ echo -                                         - >>"%userprofile%\Downloads\Runt
 echo -  Support: https://github.com/Manily04   - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 Copy "%userprofile%\Downloads\Runtime installer Log.log" "%temp%" >nul 2>&1
-set /P c= Möchtest du deinen PC jetzt neustarten [J] Fenster schließen [N]
+set /P c= Möchtest du deinen PC jetzt neustarten [J] Fenster schließen [N] :
 if /I "%c%" EQU "J" goto :Res
 if /I "%c%" EQU "N" goto :Close
 goto :Close
