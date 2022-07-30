@@ -7,39 +7,9 @@ echo [%time% ] - Ordner erstellt in c:\Users\Public\Downloads\ Ordner Name: "VC"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title Voraussetzung wird heruntergeladen
 cls
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                 Voraussetzungen zur Installation                                      -
-echo -                                                                                                       -
-echo -                                      werden heruntergeladen                                           -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =               DOWNLOAD BEGINNT          = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo [%time% ] - Voraussetzung zur Instalation wird heruntergeladen >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/Universeller-Runtime-Installer-DE/raw/main/DesktopInstaller.appx','c:\users\public\downloads\VC\DesktopInstaller.Appx')
-powershell -c $e=new-object net.webclient ; $e.proxy=[net.webrequest]::getsystemwebproxy();$e.proxy.credentials=[net.credentialcache]::defaultcredentials;$e.downloadfile('https://github.com/Manily04/Universeller-Runtime-Installer-DE/raw/main/MicrosoftUI.Appx','c:\users\public\downloads\VC\MicrosoftUI.Appx')
 cls
 title VC Runtime wird heruntergeladen
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
