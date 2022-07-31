@@ -4,7 +4,7 @@
 
 .. image:: https://img.shields.io/github/downloads/Manily04/Universeller-Runtime-Installer-DE/total?label=Downloads
    :alt: Total Downloads
-
+   :target: https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest
 
 Universeller Runtime Installer
 ===============================
