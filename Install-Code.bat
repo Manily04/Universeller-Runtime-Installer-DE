@@ -40,7 +40,7 @@ echo [%time% ] - Geschõftsbedinungen Wurden zugestimmt >>"%userprofile%\Downloa
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :FulloNot
-title VC Runtimes
+title Auswahl
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -446,7 +446,7 @@ echo -                                                                          
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 Timeout 4 /nobreak >nul 2>&1
-title Visual C++ UWP
+title UWP Runtimes
 cls 
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -858,7 +858,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Visual C Runtimes Installieren [J] Überspringen [N] :
+set /P c= Visual C Runtimes Installieren [J] ³berspringen [N] :
 if /I "%c%" EQU "J" goto :VC
 if /I "%c%" EQU "N" goto :VCNo
 goto :VCchoices
@@ -1271,7 +1271,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= UWP Runtimes Installieren [J] Überspringen [N] :
+set /P c= UWP Runtimes Installieren [J] ³berspringen [N] :
 if /I "%c%" EQU "J" goto :UWPRuntimes
 if /I "%c%" EQU "N" goto :UWPRuntimesNo
 goto :UWPRuntimesChoice
@@ -1498,7 +1498,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= XNA Framework Installieren [J] Überspringen [N] :
+set /P c= XNA Framework Installieren [J] ³berspringen [N] :
 if /I "%c%" EQU "J" goto :XNA
 if /I "%c%" EQU "N" goto :XNANo
 goto :XNAchoice
@@ -1568,7 +1568,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 5 [J] Überspringen [N] :
+set /P c= Microsoft .Net Desktop Runtime 5 [J] ³berspringen [N] :
 if /I "%c%" EQU "J" goto :Net5
 if /I "%c%" EQU "N" goto :Net5no
 goto :Net5choice
@@ -1638,7 +1638,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 6 [J] Überspringen [N] :
+set /P c= Microsoft .Net Desktop Runtime 6 [J] ³berspringen [N] :
 if /I "%c%" EQU "J" goto :Net6
 if /I "%c%" EQU "N" goto :Net6no
 goto :Net6choice
@@ -1708,7 +1708,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= DirectX Installieren [J] Überspringen [N] :
+set /P c= DirectX Installieren [J] ³berspringen [N] :
 if /I "%c%" EQU "J" goto :DirectX
 if /I "%c%" EQU "N" goto :DirectXno
 goto :DirectXchoice
@@ -1778,7 +1778,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Java Installieren [J] Überspringen [N] :
+set /P c= Java Installieren [J] ³berspringen [N] :
 if /I "%c%" EQU "J" goto :Java
 if /I "%c%" EQU "N" goto :Javano
 goto :JavaChoice
@@ -1814,10 +1814,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - DirectX wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Java wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 winget install Oracle.JavaRuntimeEnvironment
-echo [%time% ] - DirectX wurde installiert -- Erweiteter installations Log befindet sich in: "C:\Windows\DirectX.log">>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Java wurde installiert -- Erweiteter installations Log befindet sich in: "C:\Windows\DirectX.log" >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :OpenALchoice
 title OpenAL
