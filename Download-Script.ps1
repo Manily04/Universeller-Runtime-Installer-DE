@@ -1,4 +1,5 @@
 @echo off
+color 07
 chcp 850
 echo [%time% ] - log start >"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
