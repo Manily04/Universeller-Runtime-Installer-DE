@@ -829,6 +829,38 @@ C:\Users\Public\Downloads\VC\oalinst.exe /s
 Timeout 4 /nobreak >nul 2>&1
 echo [%time% ] - OpenAL wurde installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title UWP Apps werden aktualisiert
+cls
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           UWP Updates                                                 -
+echo -                                                                                                       -
+echo -                                        werden Installiert                                             -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo [%time% ] - UWP Apps werden aktualisiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget upgrade --all
+echo [%time% ] - UWP Apps wurden erfolgreich installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :ENDE
 :Costum
 :VCchoices
@@ -1928,7 +1960,7 @@ echo [%time% ] - UWP Updates werden nicht installiert >>"%userprofile%\Downloads
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :ENDE
 :Update
-title Updating in progress
+title UWP Apps werden aktualisiert
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1985,7 +2017,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                Du kannst deinen PC jetzt neustarten [J]                               -
 echo -                                                                                                       -
-echo -                                         Oder später [N]                                               -
+echo -                                         Oder sp„ter [N]                                               -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
