@@ -36,6 +36,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+winget search 112
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -662,70 +663,6 @@ echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Users\Public\Downloads\VC\DirectX_UWP.appx'
 echo [%time% ] - DirectX UWP Runtime wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-title Microsoft XNA Framework wird installiert
-cls
-echo [%time% ] - Microsoft XNA Framework wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                      Microsoft XNA Framework                                          -
-echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.XNARedist
-echo [%time% ] - Microsoft XNA Framework wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-title Microsoft .Net Desktop Runtime 5 wird installiert
-cls
-echo [%time% ] - Microsoft .Net Desktop Runtime 5 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                  Microsoft .Net Desktop Runtime 5                                     -
-echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.DotNet.DesktopRuntime.5
-echo [%time% ] - Microsoft .Net Desktop Runtime 5 wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title Microsoft .Net Desktop Runtime 6 wird installiert
 cls
 echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -789,6 +726,38 @@ echo [%time% ] - DirectX wird installiert >>"%userprofile%\Downloads\Runtime ins
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 winget install Microsoft.DirectX
 echo [%time% ] - DirectX wurde installiert -- Erweiteter installations Log befindet sich in: "C:\Windows\DirectX.log">>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Microsoft XNA Framework wird installiert
+cls
+echo [%time% ] - Microsoft XNA Framework wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                      Microsoft XNA Framework                                          -
+echo -                                                                                                       -
+echo -                                         wird Installiert                                              -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+winget install Microsoft.XNARedist
+echo [%time% ] - Microsoft XNA Framework wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title Java wird Installiert
 cls
@@ -1337,7 +1306,7 @@ goto :UWPRuntimesChoice
 :UWPRuntimesNo
 echo [%time% ] - UWP Runtimes werden nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :XNAchoice
+goto :Net6choice
 :UWPRuntimes
 title Visual C++ UWP
 cls 
@@ -1529,146 +1498,6 @@ powershell -c Add-AppxPackage -Path 'C:\Users\Public\Downloads\VC\DirectX_UWP.ap
 echo [%time% ] - DirectX UWP Runtime wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
-:XNAchoice
-title Microsoft XNA Framework
-cls
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
-echo -                                                                                                       -
-echo -                                      Microsoft XNA Framework                                          -
-echo -                                                                                                       -
-echo -                                           Installieren?                                               -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= XNA Framework Installieren [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :XNA
-if /I "%c%" EQU "N" goto :XNANo
-goto :XNAchoice
-:XNANo
-echo [%time% ] - Microsoft XNA Framework wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :Net5choice
-:XNA
-title Microsoft XNA Framework wird installiert
-cls
-echo [%time% ] - Microsoft XNA Framework wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                      Microsoft XNA Framework                                          -
-echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.XNARedist
-echo [%time% ] - Microsoft XNA Framework wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-cls
-:Net5choice
-title Microsoft .Net Desktop Runtime 5
-cls
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
-echo -                                                                                                       -
-echo -                                   Microsoft .Net Desktop Runtime 5                                    -
-echo -                                                                                                       -
-echo -                                           Installieren?                                               -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 5 [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :Net5
-if /I "%c%" EQU "N" goto :Net5no
-goto :Net5choice
-:Net5no
-echo [%time% ] - Microsoft .Net Desktop Runtime 5 wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :Net6choice
-:Net5
-title Microsoft .Net Desktop Runtime 5 wird installiert
-cls
-echo [%time% ] - Microsoft .Net Desktop Runtime 5 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                  Microsoft .Net Desktop Runtime 5                                     -
-echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.DotNet.DesktopRuntime.5
-echo [%time% ] - Microsoft .Net Desktop Runtime 5 wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-cls
 :Net6choice
 title Microsoft .Net Desktop Runtime 6
 cls
@@ -1702,13 +1531,13 @@ if /I "%c%" EQU "J" goto :Net6
 if /I "%c%" EQU "N" goto :Net6no
 goto :Net6choice
 :Net6no
-echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Microsoft .Net Desktop Runtime 5 wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :DirectXchoice
+goto :Net7choice
 :Net6
 title Microsoft .Net Desktop Runtime 6 wird installiert
 cls
-echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Microsoft .Net Desktop Runtime 5 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1737,6 +1566,76 @@ echo -                                           (c)Manily                      
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 winget install Microsoft.DotNet.DesktopRuntime.6
 echo [%time% ] - Microsoft .Net Desktop Runtime 6 wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+cls
+:Net7choice
+title Microsoft .Net Desktop Runtime 7
+cls
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                            M”chtest du                                                -
+echo -                                                                                                       -
+echo -                                   Microsoft .Net Desktop Runtime 7                                    -
+echo -                                                                                                       -
+echo -                                           Installieren?                                               -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+set /P c= Microsoft .Net Desktop Runtime 7 [J] šberspringen [N] :
+if /I "%c%" EQU "J" goto :Net7
+if /I "%c%" EQU "N" goto :Net7no
+goto :Net7choice
+:Net7no
+echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+goto :DirectXchoice
+:Net7
+title Microsoft .Net Desktop Runtime 7 wird installiert
+cls
+echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                  Microsoft .Net Desktop Runtime 7                                     -
+echo -                                                                                                       -
+echo -                                         wird Installiert                                              -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+winget install Microsoft.DotNet.DesktopRuntime.7
+echo [%time% ] - Microsoft .Net Desktop Runtime 7 wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :DirectXchoice
@@ -1774,7 +1673,7 @@ goto :DirectXchoice
 :DirectXno
 echo [%time% ] - DirectX wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :Javachoice
+goto :XNAchoice
 :DirectX
 title DirectX wird Installiert
 cls
@@ -1807,6 +1706,76 @@ echo [%time% ] - DirectX wird installiert >>"%userprofile%\Downloads\Runtime ins
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 winget install Microsoft.DirectX
 echo [%time% ] - DirectX wurde installiert -- Erweiteter installations Log befindet sich in: "C:\Windows\DirectX.log">>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+cls
+:XNAchoice
+title Microsoft XNA Framework
+cls
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                            M”chtest du                                                -
+echo -                                                                                                       -
+echo -                                      Microsoft XNA Framework                                          -
+echo -                                                                                                       -
+echo -                                           Installieren?                                               -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+set /P c= XNA Framework Installieren [J] šberspringen [N] :
+if /I "%c%" EQU "J" goto :XNA
+if /I "%c%" EQU "N" goto :XNANo
+goto :XNAchoice
+:XNANo
+echo [%time% ] - Microsoft XNA Framework wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+goto :JavaChoice
+:XNA
+title Microsoft XNA Framework wird installiert
+cls
+echo [%time% ] - Microsoft XNA Framework wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                      Microsoft XNA Framework                                          -
+echo -                                                                                                       -
+echo -                                         wird Installiert                                              -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+winget install Microsoft.XNARedist
+echo [%time% ] - Microsoft XNA Framework wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :JavaChoice
