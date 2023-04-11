@@ -4,6 +4,7 @@ chcp 850
 echo [%time% ] - log start >"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 mkdir C:\Users\Public\Downloads\VC >nul 2>&1
+mkdir C:\Users\Public\Documents\VC >nul 2>&1
 echo [%time% ] - Ordner erstellt in c:\Users\Public\Downloads\ Ordner Name: "VC" Pfad: c:\Users\Public\Downloads\VC >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
@@ -111,7 +112,7 @@ echo =                                         = >>"%userprofile%\Downloads\Runt
 echo =            DOWNLOAD ABGESCHLOSSEN       = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-copy "install.bat" C:\Users\Public\Downloads\VC >nul 2>&1
+copy "install.bat" C:\Users\Public\Documents\VC\install.bat >nul 2>&1
 echo [%time% ] - vc install.bat wurde nach c:\Users\Public\Downloads\VC Kopiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del install.bat
@@ -123,3 +124,5 @@ echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del start.bat
 echo [%time% ] - Die originale "start.bat" Datei wurde gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+copy VCDownloader.bat C:\Users\Public\Downloads\VC >nul 2>&1
+del VCDownloader.bat
