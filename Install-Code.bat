@@ -9,7 +9,7 @@ echo =            INSTALLATION BEGINNT         = >>"%userprofile%\Downloads\Runt
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
-echo [%time% ] - Winget allgemeine Geschõftsbedinungen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Winget allgemeine Geschäftsbedinungen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -21,13 +21,13 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                             Um die Installation zu ermöglichen müssen sie den                         -
+echo -                             Um die Installation zu erm”glichen mssen sie den                         -
 echo -                                                                                                       -
-echo -                    allgemeine Geschäftsbedingungen (AGB) von Winget (Microsoft) akzeptieren           -
+echo -                    allgemeine Gesch„ftsbedingungen (AGB) von Winget (Microsoft) akzeptieren           -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                      Dazu bitte Y auf ihrer Tastatur drücken und mit Enter bestätigen                 -
+echo -                      Dazu bitte Y auf ihrer Tastatur drcken und mit Enter best„tigen                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -64,7 +64,7 @@ echo -                                                                          
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 winget source update
-echo [%time% ] - Geschõftsbedinungen wurden zugestimmt >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Geschäftsbedinungen wurden zugestimmt >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :FulloNot
@@ -80,11 +80,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                   Alle Runtimes installieren  [F]                                     -
 echo -                                               oder                                                    -
-echo -                             Auswählen welche Runtimes installiert werden  [C]                         -
+echo -                             Ausw„hlen welche Runtimes installiert werden  [C]                         -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -95,7 +95,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Volle Installation [F] auswählen was installiert werden soll [C] :
+set /P c= Volle Installation [F] ausw„hlen was installiert werden soll [C] :
 if /I "%c%" EQU "F" goto :Full
 if /I "%c%" EQU "C" goto :Costum
 goto :FulloNot
@@ -966,7 +966,7 @@ winget upgrade --all
 echo [%time% ] - UWP Apps wurden erfolgreich installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 Timeout 4 /nobreak >nul 2>&1
-title SFC Scan läuft
+title SFC Scan l„uft
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -982,7 +982,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                         SFC System Scan                                               -
 echo -                                                                                                       -
-echo -                                         wird ausgeführt                                               -
+echo -                                         wird ausgefhrt                                               -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -993,7 +993,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - SFC Systemscan wird ausgeführt >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - SFC Systemscan wird ausgefhrt >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 sfc /scannow
 echo [%time% ] - Systemscan erfolgreich abgeschlossen >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -1014,7 +1014,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                    Visual C runtimes von 2008 bis 2022                                -
 echo -                                                                                                       -
@@ -1023,13 +1023,13 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                  (J oder N und Enter um zu bestätigen)                                -
+echo -                                  (J oder N und Enter um zu best„tigen)                                -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Visual C Runtimes Installieren [J] Überspringen [N] :
+set /P c= Visual C Runtimes Installieren [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :VC
 if /I "%c%" EQU "N" goto :VCNo
 goto :VCchoices
@@ -1414,7 +1414,7 @@ goto :C2022x86
 :C2013x64Success
 echo [%time% ] - Visual C Redist 2013 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2013x64
+:C2012x86
 title Fortschritt: 75 Prozent
 cls
 echo [%time% ] - Visual C Redist 2022 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -1453,7 +1453,7 @@ goto :C2022x64
 :C2022x86Success
 echo [%time% ] - Visual C Redist 2022 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2013x64
+:C2022x64
 title Fortschritt: 90 Prozent
 cls
 echo [%time% ] - Visual C Redist 2022 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -1488,11 +1488,11 @@ if %errorlevel% LEQ 0 goto :C2022x64Success else goto :C2022x64Fail
 :C2022x64Fail
 echo [%time% ] - Bei der Installation von Visual C Redist 2022 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2022x86
-:C2022x64uccess
+goto :CFinish
+:C2022x64success
 echo [%time% ] - Visual C Redist 2022 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2013x64
+:CFinish
 title Fortschritt: 100 Prozent
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -1535,7 +1535,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                   UWP Runtimes (DirectX und Visual C)                                 -
 echo -                                                                                                       -
@@ -1550,7 +1550,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= UWP Runtimes Installieren [J] Überspringen [N] :
+set /P c= UWP Runtimes Installieren [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :UWPRuntimes
 if /I "%c%" EQU "N" goto :UWPRuntimesNo
 goto :UWPRuntimesChoice
@@ -1762,7 +1762,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                   Microsoft .Net Desktop Runtime 6                                    -
 echo -                                                                                                       -
@@ -1777,7 +1777,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 6 [J] Überspringen [N] :
+set /P c= Microsoft .Net Desktop Runtime 6 [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :Net6
 if /I "%c%" EQU "N" goto :Net6no
 goto :Net6choice
@@ -1832,7 +1832,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                   Microsoft .Net Desktop Runtime 7                                    -
 echo -                                                                                                       -
@@ -1847,7 +1847,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 7 [J] Überspringen [N] :
+set /P c= Microsoft .Net Desktop Runtime 7 [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :Net7
 if /I "%c%" EQU "N" goto :Net7no
 goto :Net7choice
@@ -1902,7 +1902,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                             DirectX                                                   -
 echo -                                                                                                       -
@@ -1917,7 +1917,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= DirectX Installieren [J] Überspringen [N] :
+set /P c= DirectX Installieren [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :DirectX
 if /I "%c%" EQU "N" goto :DirectXno
 goto :DirectXchoice
@@ -1972,7 +1972,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                      Microsoft XNA Framework                                          -
 echo -                                                                                                       -
@@ -1987,7 +1987,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= XNA Framework Installieren [J] Überspringen [N] :
+set /P c= XNA Framework Installieren [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :XNA
 if /I "%c%" EQU "N" goto :XNANo
 goto :XNAchoice
@@ -2042,7 +2042,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                              Java                                                     -
 echo -                                                                                                       -
@@ -2057,7 +2057,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Java Installieren [J] Überspringen [N] :
+set /P c= Java Installieren [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :Java
 if /I "%c%" EQU "N" goto :Javano
 goto :JavaChoice
@@ -2112,7 +2112,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                              OpenAL                                                   -
 echo -                                                                                                       -
@@ -2127,7 +2127,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= OpenAL Installieren [J] Überspringen [N] :
+set /P c= OpenAL Installieren [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :OpenAL
 if /I "%c%" EQU "N" goto :OpenALno
 goto :OpenALchoice
@@ -2182,7 +2182,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            Möchtest du                                                -
+echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
 echo -                                            UWP Updates                                                -
 echo -                                                                                                       -
@@ -2197,7 +2197,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Updates installieren [J] Überspringen [N] :
+set /P c= Updates installieren [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :Update
 if /I "%c%" EQU "N" goto :Updateno
 goto :UpdateChoice
@@ -2252,11 +2252,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         Möchtest du zuletzt                                           -
+echo -                                         M”chtest du zuletzt                                           -
 echo -                                                                                                       -
 echo -                                          einen Systemscan                                             -
 echo -                                                                                                       -
-echo -                                            durchühren?                                                -
+echo -                                            durchhren?                                                -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2267,16 +2267,16 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Systemscan durchführen [J] Überspringen [N] :
+set /P c= Systemscan durchfhren [J] šberspringen [N] :
 if /I "%c%" EQU "J" goto :SFC
 if /I "%c%" EQU "N" goto :SFCno
 goto :SFCChoice
 :SFCno
-echo [%time% ] - System scan wird übersprungen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - System scan wird bersprungen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :ENDE
 :SFC
-title SFC Scan läuft
+title SFC Scan l„uft
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -2292,7 +2292,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                         SFC System Scan                                               -
 echo -                                                                                                       -
-echo -                                         wird ausgeführt                                               -
+echo -                                         wird ausgefhrt                                               -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2303,7 +2303,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - SFC Systemscan wird ausgeführt >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - SFC Systemscan wird ausgefhrt >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 sfc /scannow
 echo [%time% ] - Systemscan erfolgreich abgeschlossen >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -2333,7 +2333,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                Du kannst deinen PC jetzt neustarten [J]                               -
 echo -                                                                                                       -
-echo -                                         Oder später [N]                                               -
+echo -                                         Oder sp„ter [N]                                               -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
@@ -2366,12 +2366,12 @@ echo -                                         - >>"%userprofile%\Downloads\Runt
 echo -  Support: https://github.com/Manily04   - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 Copy "%userprofile%\Downloads\Runtime installer Log.log" "%temp%" >nul 2>&1
-set /P c= Möchtest du deinen PC jetzt neustarten [J] Fenster schließen [N] :
+set /P c= M”chtest du deinen PC jetzt neustarten [J] Fenster schlieáen [N] :
 if /I "%c%" EQU "J" goto :Res
 if /I "%c%" EQU "N" goto :Close
 goto :Close
 :Res
-shutdown /r /t 15 /c "Neustart um änderungen an Runtimes zu übernehmen"
+shutdown /r /t 15 /c "Neustart um „nderungen an Runtimes zu bernehmen"
 cls
 echo "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-"
 echo "-                                                                                                       -"
@@ -2382,11 +2382,11 @@ echo "-                                                                         
 echo "-                                                                                                       -"
 echo "-                                                                                                       -"
 echo "-                                                                                                       -"
-echo "-                             Vielen Dank für die Verwendung dieses Tools                               -"
+echo "-                             Vielen Dank fr die Verwendung dieses Tools                               -"
 echo "-                                                                                                       -"
 echo "-                                                ^.^                                                    -"
 echo "-                                                                                                       -"
-echo "-                                 Du kannst dieses Fenster nun schließen                                -"
+echo "-                                 Du kannst dieses Fenster nun schlieáen                                -"
 echo "-                                                                                                       -"
 echo "-                                                                                                       -"
 echo "-                                                                                                       -"
@@ -2410,11 +2410,11 @@ echo "-                                                                         
 echo "-                                                                                                       -"
 echo "-                                                                                                       -"
 echo "-                                                                                                       -"
-echo "-                             Vielen Dank für die Verwendung dieses Tools                               -"
+echo "-                             Vielen Dank fr die Verwendung dieses Tools                               -"
 echo "-                                                                                                       -"
 echo "-                                                ^.^                                                    -"
 echo "-                                                                                                       -"
-echo "-                                 Du kannst dieses Fenster nun schließen                                -"
+echo "-                                 Du kannst dieses Fenster nun schlieáen                                -"
 echo "-                                                                                                       -"
 echo "-                                                                                                       -"
 echo "-                                                                                                       -"
