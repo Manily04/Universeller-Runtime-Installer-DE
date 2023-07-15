@@ -1,15 +1,13 @@
 @echo off
-color 07
-chcp 850
-title Winget AGB
+title Winget GTC
 cls
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo =            INSTALLATION BEGINNT         = >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo =               INSTALLATION START        = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
-echo [%time% ] - Winget allgemeine Geschäftsbedinungen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Prerequisites for installing the runtimes are Installing >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -21,13 +19,13 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                             Um die Installation zu erm”glichen mssen sie den                         -
+echo -                             In order to enable the installation, you have to                          -
 echo -                                                                                                       -
-echo -                    allgemeine Gesch„ftsbedingungen (AGB) von Winget (Microsoft) akzeptieren           -
+echo -                    accept the general terms and conditions (GTC) of Winget (Microsoft).               -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                      Dazu bitte Y auf ihrer Tastatur drcken und mit Enter best„tigen                 -
+echo -                     To do this, please press Y on your keyboard and confirm with Enter                -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -48,13 +46,13 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                    Winget source wird geupdated                                       -
+echo -                                   Winget Source is beeing updated                                     -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Bitte Warten                                                 -
+echo -                                            Please Wait                                                -
+echo -                                                                                                       -
+echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -64,11 +62,11 @@ echo -                                                                          
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 winget source update
-echo [%time% ] - Geschäftsbedinungen wurden zugestimmt >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - GTC has been agreed to >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :FulloNot
-title Auswahl
+title Choose
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -80,11 +78,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
+echo -                                          Do you want to                                               -
 echo -                                                                                                       -
-echo -                                   Alle Runtimes installieren  [F]                                     -
-echo -                                               oder                                                    -
-echo -                             Ausw„hlen welche Runtimes installiert werden  [C]                         -
+echo -                                       install all runtimes  [F]                                       -
+echo -                                                or                                                     -
+echo -                                  select which runtimes to install  [C]                                -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -95,13 +93,12 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Volle Installation [F] ausw„hlen was installiert werden soll [C] :
+set /P c= Full install [F] choose what to install [C] :
 if /I "%c%" EQU "F" goto :Full
 if /I "%c%" EQU "C" goto :Costum
 goto :FulloNot
 :Full
-title VC-Redist Downloads
-cls
+title Installing VC runtime
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -116,30 +113,21 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                      wird Heruntergeladen                                             -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-start /min VCDownloader.bat
-:download1
-color 2
-Timeout /t 2 /nobreak >nul 2>&1
-color 4
-Timeout /t 2 /nobreak >nul 2>&1
-if exist c:\Users\Public\Downloads\VC\VCdownload.bin (
-goto :VCinstall1
-) else (
-goto download1
-)
-:VCinstall1
-title VC-Redist wird installiert:
+title Progress: 0 Percent
+cls
+echo [%time% ] - Installing Visual C Redist 2008 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -154,20 +142,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-title Fortschritt: 0 Prozent
+winget install Microsoft.VCRedist.2008.x64
+echo [%time% ] - Visual C Redist 2008 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Progress: 10 Percent
 cls
-echo [%time% ] - Visual C Redist 2008 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2008 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -183,69 +174,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2008x86.exe /quiet
-if %errorlevel% LEQ 0 goto :2008x86Success else goto :2008x86Fail 
-:2008x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2008 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2008x64
-:2008x86Success
-echo [%time% ] - Visual C Redist 2008 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2008x64
-title Fortschritt: 10 Prozent
-cls
-echo [%time% ] - Visual C Redist 2008 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                      Visual Studio Runtime                                            -
-echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==========                                                                                           -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2008x64.exe /quiet
-if %errorlevel% LEQ 0 goto :2008x64Success else goto :2008x64Fail
-:2008x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2008 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2008.x86
+echo [%time% ] - Visual C Redist 2008 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2010x86
-:2008x64Success
-echo [%time% ] - Visual C Redist 2008 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2010x86
-title Fortschritt: 20 Prozent
+title Progress: 20 Percent
 cls
-echo [%time% ] - Visual C Redist 2010 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2010 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -261,30 +206,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ====================                                                                                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2010x86.exe /quiet
-if %errorlevel% LEQ 0 goto :2010x86Success else goto :2010x86Fail
-:2010x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2010 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2010.x64
+echo [%time% ] - Visual C Redist 2010 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2010x64
-:2010x86Success
-echo [%time% ] - Visual C Redist 2010 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2010x64
-title Fortschritt: 30 Prozent
+title Progress: 30 Percent
 cls
-echo [%time% ] - Visual C Redist 2010 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2010 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -300,30 +238,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==============================                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2010x64.exe /quiet
-if %errorlevel% LEQ 0 goto :2010x64Success else goto :2010x64Fail
-:2010x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2010 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2010.x86
+echo [%time% ] - Visual C Redist 2010 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2012x86
-:2010x64Success
-echo [%time% ] - Visual C Redist 2010 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2012x86
-title Fortschritt: 40 Prozent
+title Progress: 40 Percent
 cls
-echo [%time% ] - Visual C Redist 2012 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2012 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -339,30 +270,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ========================================                                                             -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2012x86.exe /quiet
-if %errorlevel% LEQ 0 goto :2012x86Success else goto :2012x86Fail
-:2012x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2012 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2012.x64
+echo [%time% ] - Visual C Redist 2012 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2012x64
-:2012x86Success
-echo [%time% ] - Visual C Redist 2012 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2012x64
-title Fortschritt: 50 Prozent
+title Progress: 50 Percent
 cls
-echo [%time% ] - Visual C Redist 2012 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2012 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -378,30 +302,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==================================================                                                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2012x64.exe /quiet
-if %errorlevel% LEQ 0 goto :2012x64Success else goto :2012x64Fail
-:2012x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2012 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2012.x86
+echo [%time% ] - Visual C Redist 2012 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2013x86
-:2012x64Success
-echo [%time% ] - Visual C Redist 2012 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x86
-title Fortschritt: 55 Prozent
+title Progress: 60 Percent
 cls
-echo [%time% ] - Visual C Redist 2013 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2013 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -417,69 +334,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
-echo -  =======================================================                                              -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2013x86.exe /quiet
-if %errorlevel% LEQ 0 goto :2013x86Success else goto :2013x86Fail
-:2013x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2013 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2013x64
-:2013x86Success
-echo [%time% ] - Visual C Redist 2013 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x64
-title Fortschritt: 60 Prozent
-cls
-echo [%time% ] - Visual C Redist 2013 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                      Visual Studio Runtime                                            -
-echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ============================================================                                         -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2013x64.exe /quiet
-if %errorlevel% LEQ 0 goto :2013x64Success else goto :2013x64Fail
-:2013x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2013 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2013.x64
+echo [%time% ] - Visual C Redist 2013 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2022x86
-:2013x64Success
-echo [%time% ] - Visual C Redist 2013 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x64
-title Fortschritt: 75 Prozent
+title Progress: 70 Percent
 cls
-echo [%time% ] - Visual C Redist 2022 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2013 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -495,30 +366,55 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
+echo -  ======================================================================                               -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+winget install Microsoft.VCRedist.2013.x86
+echo [%time% ] - Visual C Redist 2013 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Progress: 80 Percent
+cls
+echo [%time% ] - Installing Visual C Redist 2022 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                      Visual Studio Runtime                                            -
+echo -                                                                                                       -
+echo -                                           Installing                                                  -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ================================================================================                     -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2022x86.exe /quiet
-if %errorlevel% LEQ 0 goto :2022x86Success else goto :2022x86Fail
-:2022x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2022 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2015+.x64
+echo [%time% ] - Visual C Redist 2022 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2022x64
-:2022x86Success
-echo [%time% ] - Visual C Redist 2022 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x64
-title Fortschritt: 90 Prozent
+title Progress: 90 Percent
 cls
-echo [%time% ] - Visual C Redist 2022 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2022 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -534,28 +430,21 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==========================================================================================           -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2022x64.exe /quiet
-if %errorlevel% LEQ 0 goto :2022x64Success else goto :2022x64Fail
-:2022x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2022 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2015+.x86
+echo [%time% ] - Visual C Redist 2022 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2022x86
-:2022x64uccess
-echo [%time% ] - Visual C Redist 2022 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x64
-title Fortschritt: 100 Prozent
+title Progress: 100 Percent
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -571,11 +460,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==================================================================================================== -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -599,11 +488,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                     Visual C UWP Runtime v11                                          -
 echo -                                                                                                       -
-echo -                                        wird extrahiert                                                -
+echo -                                          extracting                                                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                                                                                                       - 
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -611,7 +500,7 @@ echo -                                                                          
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_110_UWP.exe /q /norestart
-echo [%time% ] - Visual C++ UWP Runtime v11.0 wird extrahiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Extracting Visual C++ UWP Runtime v11.0 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 Timeout 3 /nobreak >nul 2>&1
 cls 
@@ -629,11 +518,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                     Visual C UWP Runtime v12                                          -
 echo -                                                                                                       -
-echo -                                        wird extrahiert                                                -
+echo -                                          extracting                                                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                                                                                                       - 
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -641,7 +530,7 @@ echo -                                                                          
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_120_UWP.exe /q /norestart
-echo [%time% ] - Visual C++ UWP Runtime v12.0 wird extrahiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Extracting Visual C++ UWP Runtime v12.0 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 Timeout 3 /nobreak >nul 2>&1
 title VC UWP 11
@@ -660,7 +549,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                     Visual C UWP Runtime v11                                          -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                            Installing                                                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -671,10 +560,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - Visual C++ UWP Runtime v11.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C++ UWP Runtime v11.0 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop.110\14.0\Appx\Retail\x64\Microsoft.VCLibs.x64.11.00.Desktop.appx'
-echo [%time% ] - Visual C++ UWP Runtime v11.0 wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C++ UWP Runtime v11.0 has been installed -- No installation log created >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title VC UWP 12
 cls
@@ -692,7 +581,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                     Visual C UWP Runtime v12                                          -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                            Installing                                                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -703,10 +592,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - Visual C++ UWP Runtime v12.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C++ UWP Runtime v12.0 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop.120\14.0\Appx\Retail\x64\Microsoft.VCLibs.x64.12.00.Desktop.appx'
-echo [%time% ] - Visual C++ UWP Runtime v12.0 wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C++ UWP Runtime v12.0 has been installed -- No installation log created >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title VC UWP 14
 cls
@@ -738,7 +627,7 @@ echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - Visual C++ UWP Runtime v14.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Users\Public\Downloads\VC\VC_140_UWP.appx'
-echo [%time% ] - Visual C++ UWP Runtime v14.0 wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C++ UWP Runtime v14.0 has been installed -- No installation log created >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title DirectX UWP
 cls
@@ -756,7 +645,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                          DirectX UWP                                                  -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                          Installing                                                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -767,14 +656,14 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - DirectX UWP Runtime wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing DirectX UWP Runtime >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Users\Public\Downloads\VC\DirectX_UWP.appx'
-echo [%time% ] - DirectX UWP Runtime wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - DirectX UWP Runtime has been installed -- No installation log created >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-title Microsoft .Net Desktop Runtime 6 wird installiert
+title installing Microsoft .Net Desktop Runtime 6
 cls
-echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Microsoft .Net Desktop Runtime 6 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -790,7 +679,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                  Microsoft .Net Desktop Runtime 6                                     -
 echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
+echo -                                            Installing                                                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -801,10 +690,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.DotNet.DesktopRuntime.6 --force
-echo [%time% ] - Microsoft .Net Desktop Runtime 6 wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.DotNet.DesktopRuntime.6
+echo [%time% ] - Microsoft .Net Desktop Runtime 6 has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-title DirectX wird Installiert
+title installing DirectX
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -820,25 +709,25 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                            DirectX                                                    -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                      Dauer: ca. 1 minute                                              -
+echo -                                      Duration: approx. 1 minute                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - DirectX wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing DirectX >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-winget install Microsoft.DirectX --force
-echo [%time% ] - DirectX wurde installiert -- Erweiteter installations Log befindet sich in: "C:\Windows\DirectX.log">>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.DirectX
+echo [%time% ] - DirectX has been installed -- Extended installations log is located in: "C:\Windows\DirectX.log" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-title Microsoft XNA Framework wird installiert
+title Installing Microsoft XNA Framework
 cls
-echo [%time% ] - Microsoft XNA Framework wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Microsoft XNA Framework >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -854,7 +743,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Microsoft XNA Framework                                          -
 echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -865,10 +754,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.XNARedist --force
-echo [%time% ] - Microsoft XNA Framework wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.XNARedist
+echo [%time% ] - Microsoft XNA Framework has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-title Java wird Installiert
+title Installing Java
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -884,7 +773,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                             Java                                                      -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -895,12 +784,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - Java wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Java >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-winget install Oracle.JavaRuntimeEnvironment --force
-echo [%time% ] - Java wurde installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-title OpenAL wird Installiert
+winget install Oracle.JavaRuntimeEnvironment
+echo [%time% ] - Java has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Installing OpenAL
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -916,7 +804,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                             OpenAL                                                    -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -927,13 +815,13 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - OpenAL wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing OpenAL >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 C:\Users\Public\Downloads\VC\oalinst.exe /s
 Timeout 4 /nobreak >nul 2>&1
-echo [%time% ] - OpenAL wurde installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - OpenAL has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-title UWP Apps werden aktualisiert
+title Updating in progress
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -947,9 +835,9 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                           UWP Updates                                                 -
+echo -                                           Updating                                                    -
 echo -                                                                                                       -
-echo -                                        werden Installiert                                             -
+echo -                                           UWP apps                                                    -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -960,49 +848,16 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - UWP Apps werden aktualisiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Updating UWP apps >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 winget upgrade --all
-echo [%time% ] - UWP Apps wurden erfolgreich installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-Timeout 4 /nobreak >nul 2>&1
-title SFC Scan l„uft
-cls
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                         SFC System Scan                                               -
-echo -                                                                                                       -
-echo -                                         wird ausgefhrt                                               -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - SFC Systemscan wird ausgefhrt >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-sfc /scannow
-echo [%time% ] - Systemscan erfolgreich abgeschlossen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - UWP apps have been succesfully updated >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 goto :ENDE
 :Costum
 :VCchoices
-title VC Runtimes
+title VC runtime
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1014,32 +869,32 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
-echo -                                    Visual C runtimes von 2008 bis 2022                                -
+echo -                                       Do you want to install                                          -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
-echo -                                                                                                       -
+echo -                                    Visual C runtimes 2008 to 2022                                     -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                  (J oder N und Enter um zu best„tigen)                                -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                  (Press Y or N and enter to confirm)                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Visual C Runtimes Installieren [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :VC
+set /P c= Install VC runtimes [Y] skip [N] :
+if /I "%c%" EQU "Y" goto :VC
 if /I "%c%" EQU "N" goto :VCNo
 goto :VCchoices
 :VCNo
-echo [%time% ] - Visual C Runtimes 2008 - 2022 werden nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C runtimes 2008 - 2022 will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :UWPRuntimesChoice
 :VC
-title VC-Redist Downloads
 cls
+title Installing VC runtime
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1054,30 +909,21 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                      wird Heruntergeladen                                             -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-start /min VCDownloader.bat
-:download2
-color 2
-Timeout /t 2 /nobreak >nul 2>&1
-color 4
-Timeout /t 2 /nobreak >nul 2>&1
-if exist c:\Users\Public\Downloads\VC\VCdownload.bin (
-goto :VCinstall2
-) else (
-goto download2
-)
-:VCinstall2
-title VC-Redist wird installiert:
+title Progress: 0 Percent
+cls
+echo [%time% ] - Installing Visual C Redist 2008 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1092,20 +938,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-title Fortschritt: 0 Prozent
+winget install Microsoft.VCRedist.2008.x64
+echo [%time% ] - Visual C Redist 2008 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Progress: 10 Percent
 cls
-echo [%time% ] - Visual C Redist 2008 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2008 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1121,69 +970,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2008x86.exe /quiet
-if %errorlevel% LEQ 0 goto :C2008x86Success else goto :C2008x86Fail 
-:C2008x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2008 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2008x64
-:C2008x86Success
-echo [%time% ] - Visual C Redist 2008 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2008x64
-title Fortschritt: 10 Prozent
-cls
-echo [%time% ] - Visual C Redist 2008 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                      Visual Studio Runtime                                            -
-echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==========                                                                                           -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2008x64.exe /quiet
-if %errorlevel% LEQ 0 goto :C2008x64Success else goto :C2008x64Fail
-:C2008x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2008 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2008.x86
+echo [%time% ] - Visual C Redist 2008 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2010x86
-:C2008x64Success
-echo [%time% ] - Visual C Redist 2008 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2010x86
-title Fortschritt: 20 Prozent
+title Progress: 20 Percent
 cls
-echo [%time% ] - Visual C Redist 2010 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2010 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1199,30 +1002,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ====================                                                                                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2010x86.exe /quiet
-if %errorlevel% LEQ 0 goto :C2010x86Success else goto :C2010x86Fail
-:C2010x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2010 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2010.x64
+echo [%time% ] - Visual C Redist 2010 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2010x64
-:C2010x86Success
-echo [%time% ] - Visual C Redist 2010 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2010x64
-title Fortschritt: 30 Prozent
+title Progress: 30 Percent
 cls
-echo [%time% ] - Visual C Redist 2010 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2010 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1238,30 +1034,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==============================                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2010x64.exe /quiet
-if %errorlevel% LEQ 0 goto :C2010x64Success else goto :C2010x64Fail
-:C2010x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2010 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2010.x86
+echo [%time% ] - Visual C Redist 2010 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2012x86
-:C2010x64Success
-echo [%time% ] - Visual C Redist 2010 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2012x86
-title Fortschritt: 40 Prozent
+title Progress: 40 Percent
 cls
-echo [%time% ] - Visual C Redist 2012 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2012 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1277,30 +1066,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ========================================                                                             -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2012x86.exe /quiet
-if %errorlevel% LEQ 0 goto :C2012x86Success else goto :C2012x86Fail
-:C2012x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2012 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2012.x64
+echo [%time% ] - Visual C Redist 2012 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2012x64
-:C2012x86Success
-echo [%time% ] - Visual C Redist 2012 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2012x64
-title Fortschritt: 50 Prozent
+title Progress: 50 Percent
 cls
-echo [%time% ] - Visual C Redist 2012 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2012 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1316,30 +1098,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==================================================                                                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2012x64.exe /quiet
-if %errorlevel% LEQ 0 goto :C2012x64Success else goto :C2012x64Fail
-:C2012x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2012 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2012.x86
+echo [%time% ] - Visual C Redist 2012 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2013x86
-:C2012x64Success
-echo [%time% ] - Visual C Redist 2012 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2013x86
-title Fortschritt: 55 Prozent
+title Progress: 60 Percent
 cls
-echo [%time% ] - Visual C Redist 2013 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2013 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1355,69 +1130,23 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
-echo -  =======================================================                                              -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2013x86.exe /quiet
-if %errorlevel% LEQ 0 goto :C2013x86Success else goto :C2013x86Fail
-:C2013x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2013 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2013x64
-:C2013x86Success
-echo [%time% ] - Visual C Redist 2013 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2013x64
-title Fortschritt: 60 Prozent
-cls
-echo [%time% ] - Visual C Redist 2013 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                      Visual Studio Runtime                                            -
-echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ============================================================                                         -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2013x64.exe /quiet
-if %errorlevel% LEQ 0 goto :C2013x64Success else goto :C2013x64Fail
-:C2013x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2013 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2013.x64
+echo [%time% ] - Visual C Redist 2013 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2022x86
-:C2013x64Success
-echo [%time% ] - Visual C Redist 2013 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2012x86
-title Fortschritt: 75 Prozent
+title Progress: 70 Percent
 cls
-echo [%time% ] - Visual C Redist 2022 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2013 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1433,30 +1162,55 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
+echo -  ======================================================================                               -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                           (c)Manily                                                   -
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+winget install Microsoft.VCRedist.2013.x86
+echo [%time% ] - Visual C Redist 2013 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Progress: 80 Percent
+cls
+echo [%time% ] - Installing Visual C Redist 2022 x64 >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                      Visual Studio Runtime                                            -
+echo -                                                                                                       -
+echo -                                           Installing                                                  -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ================================================================================                     -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2022x86.exe /quiet
-if %errorlevel% LEQ 0 goto :C2022x86Success else goto :C2022x86Fail
-:C2022x86Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2022 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2015+.x64
+echo [%time% ] - Visual C Redist 2022 x64 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :C2022x64
-:C2022x86Success
-echo [%time% ] - Visual C Redist 2022 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:C2022x64
-title Fortschritt: 90 Prozent
+title Progress: 90 Percent
 cls
-echo [%time% ] - Visual C Redist 2022 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C Redist 2022 x32 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1472,28 +1226,21 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==========================================================================================           -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-c:\users\public\downloads\VC\VC2022x64.exe /quiet
-if %errorlevel% LEQ 0 goto :C2022x64Success else goto :C2022x64Fail
-:C2022x64Fail
-echo [%time% ] - Bei der Installation von Visual C Redist 2022 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.VCRedist.2015+.x86
+echo [%time% ] - Visual C Redist 2022 x32 has been installed -- Extended installation log is located in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :CFinish
-:C2022x64success
-echo [%time% ] - Visual C Redist 2022 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:CFinish
-title Fortschritt: 100 Prozent
+title Progress: 100 Percent
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1509,11 +1256,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Visual Studio Runtime                                            -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                          Fortschritt:                                                 -
-echo -  0                                                                                               100  -
+echo -                                            Progress:                                                  -
+echo -  0                                                                                               100  - 
 echo -  ==================================================================================================== -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1523,7 +1270,7 @@ echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 Timeout 4 /nobreak >nul 2>&1
 cls
 :UWPRuntimesChoice
-title UWPRuntimes
+title UWP runtimes
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1535,11 +1282,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
-echo -                                   UWP Runtimes (DirectX und Visual C)                                 -
+echo -                                       Do you want to install                                          -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
+echo -                                    UWP Runtimes (DirectX and Visual C)                                -
+echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1550,12 +1297,12 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= UWP Runtimes Installieren [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :UWPRuntimes
-if /I "%c%" EQU "N" goto :UWPRuntimesNo
+set /P c= Install UWP runtimes [Y] skip [N] :
+if /I "%c%" EQU "Y" goto :UWPRuntimes
+if /I "%c%" EQU "N" goto :UWPRuntimesno
 goto :UWPRuntimesChoice
-:UWPRuntimesNo
-echo [%time% ] - UWP Runtimes werden nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+:UWPRuntimesno
+echo [%time% ] - UWP runtimes will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :Net6choice
 :UWPRuntimes
@@ -1575,11 +1322,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                     Visual C UWP Runtime v11                                          -
 echo -                                                                                                       -
-echo -                                        wird extrahiert                                                -
+echo -                                          extracting                                                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                                                                                                       - 
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1587,7 +1334,7 @@ echo -                                                                          
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_110_UWP.exe /q /norestart
-echo [%time% ] - Visual C++ UWP Runtime v11.0 wird extrahiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Extracting Visual C++ UWP Runtime v11.0 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 Timeout 3 /nobreak >nul 2>&1
 cls 
@@ -1605,11 +1352,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                     Visual C UWP Runtime v12                                          -
 echo -                                                                                                       -
-echo -                                        wird extrahiert                                                -
+echo -                                          extracting                                                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                                                                                                       - 
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1617,7 +1364,7 @@ echo -                                                                          
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 C:\Users\Public\Downloads\VC\VC_120_UWP.exe /q /norestart
-echo [%time% ] - Visual C++ UWP Runtime v12.0 wird extrahiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Extracting Visual C++ UWP Runtime v12.0 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 Timeout 3 /nobreak >nul 2>&1
 title VC UWP 11
@@ -1636,7 +1383,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                     Visual C UWP Runtime v11                                          -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                            Installing                                                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1647,10 +1394,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - Visual C++ UWP Runtime v11.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C++ UWP Runtime v11.0 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop.110\14.0\Appx\Retail\x64\Microsoft.VCLibs.x64.11.00.Desktop.appx'
-echo [%time% ] - Visual C++ UWP Runtime v11.0 wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C++ UWP Runtime v11.0 has been installed -- No installation log created >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title VC UWP 12
 cls
@@ -1668,7 +1415,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                     Visual C UWP Runtime v12                                          -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                            Installing                                                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1679,10 +1426,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - Visual C++ UWP Runtime v12.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Visual C++ UWP Runtime v12.0 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop.120\14.0\Appx\Retail\x64\Microsoft.VCLibs.x64.12.00.Desktop.appx'
-echo [%time% ] - Visual C++ UWP Runtime v12.0 wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C++ UWP Runtime v12.0 has been installed -- No installation log created >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title VC UWP 14
 cls
@@ -1714,7 +1461,7 @@ echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - Visual C++ UWP Runtime v14.0 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Users\Public\Downloads\VC\VC_140_UWP.appx'
-echo [%time% ] - Visual C++ UWP Runtime v14.0 wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Visual C++ UWP Runtime v14.0 has been installed -- No installation log created >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 title DirectX UWP
 cls
@@ -1732,7 +1479,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                          DirectX UWP                                                  -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                          Installing                                                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1743,10 +1490,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - DirectX UWP Runtime wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing DirectX UWP Runtime >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 powershell -c Add-AppxPackage -Path 'C:\Users\Public\Downloads\VC\DirectX_UWP.appx'
-echo [%time% ] - DirectX UWP Runtime wurde installiert -- Kein installations Log erstellt>>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - DirectX UWP Runtime has been installed -- No installation log created >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :Net6choice
@@ -1762,11 +1509,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
-echo -                                   Microsoft .Net Desktop Runtime 6                                    -
+echo -                                       Do you want to install                                          -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
+echo -                                    Microsoft .Net Desktop Runtime 6                                   -
+echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1777,18 +1524,18 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 6 [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :Net6
+set /P c= Install Microsoft .Net Desktop Runtime 6 [Y] skip [N] :
+if /I "%c%" EQU "Y" goto :Net6
 if /I "%c%" EQU "N" goto :Net6no
 goto :Net6choice
 :Net6no
-echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Microsoft .Net Desktop Runtime 6 will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :Net7choice
 :Net6
-title Microsoft .Net Desktop Runtime 6 wird installiert
+title installing Microsoft .Net Desktop Runtime 6
 cls
-echo [%time% ] - Microsoft .Net Desktop Runtime 6 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Microsoft .Net Desktop Runtime 6 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1804,7 +1551,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                  Microsoft .Net Desktop Runtime 6                                     -
 echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1815,8 +1562,8 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.DotNet.DesktopRuntime.6 --force
-echo [%time% ] - Microsoft .Net Desktop Runtime 6 wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.DotNet.DesktopRuntime.6
+echo [%time% ] - Microsoft .Net Desktop Runtime 6 has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :Net7choice
@@ -1832,11 +1579,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
-echo -                                   Microsoft .Net Desktop Runtime 7                                    -
+echo -                                       Do you want to install                                          -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
+echo -                                    Microsoft .Net Desktop Runtime 7                                   -
+echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1847,18 +1594,18 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Microsoft .Net Desktop Runtime 7 [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :Net7
+set /P c= Microsoft .Net Desktop Runtime 7 [Y] skip [N] :
+if /I "%c%" EQU "Y" goto :Net7
 if /I "%c%" EQU "N" goto :Net7no
 goto :Net7choice
 :Net7no
-echo [%time% ] - Microsoft .Net Desktop Runtime 7 wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Microsoft .Net Desktop Runtime 7 will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :DirectXchoice
 :Net7
-title Microsoft .Net Desktop Runtime 7 wird installiert
+title Installing Microsoft .Net Desktop Runtime 7
 cls
-echo [%time% ] - Microsoft .Net Desktop Runtime 7 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Microsoft .Net Desktop Runtime 7 >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1874,7 +1621,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                  Microsoft .Net Desktop Runtime 7                                     -
 echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
+echo -                                            Installing                                                 -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1885,8 +1632,8 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.DotNet.DesktopRuntime.7 --force
-echo [%time% ] - Microsoft .Net Desktop Runtime 7 wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.DotNet.DesktopRuntime.7
+echo [%time% ] - Microsoft .Net Desktop Runtime 7 has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :DirectXchoice
@@ -1902,11 +1649,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
+echo -                                                                                                       -
+echo -                                       Do you want to install                                          -
 echo -                                                                                                       -
 echo -                                             DirectX                                                   -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1917,16 +1664,16 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= DirectX Installieren [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :DirectX
+set /P c= Install DirectX [Y] skip [N] :
+if /I "%c%" EQU "Y" goto :DirectX
 if /I "%c%" EQU "N" goto :DirectXno
 goto :DirectXchoice
 :DirectXno
-echo [%time% ] - DirectX wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - DirectX will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :XNAchoice
 :DirectX
-title DirectX wird Installiert
+title installing DirectX
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -1942,21 +1689,21 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                            DirectX                                                    -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                      Dauer: ca. 1 minute                                              -
+echo -                                      Duration: approx. 1 minute                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - DirectX wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing DirectX >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-winget install Microsoft.DirectX --force
-echo [%time% ] - DirectX wurde installiert -- Erweiteter installations Log befindet sich in: "C:\Windows\DirectX.log">>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.DirectX
+echo [%time% ] - DirectX has been installed -- Extended installations log is located in: "C:\Windows\DirectX.log" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :XNAchoice
@@ -1972,11 +1719,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
-echo -                                      Microsoft XNA Framework                                          -
+echo -                                       Do you want to install                                          -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
+echo -                                       Microsoft XNA Framework                                         -
+echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1987,18 +1734,18 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= XNA Framework Installieren [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :XNA
-if /I "%c%" EQU "N" goto :XNANo
+set /P c= Install Microsoft XNA Framework [Y] skip [N] :
+if /I "%c%" EQU "Y" goto :XNA
+if /I "%c%" EQU "N" goto :XNAno
 goto :XNAchoice
-:XNANo
-echo [%time% ] - Microsoft XNA Framework wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+:XNAno
+echo [%time% ] - Microsoft XNA Framework will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :JavaChoice
 :XNA
-title Microsoft XNA Framework wird installiert
+title Installing Microsoft XNA Framework
 cls
-echo [%time% ] - Microsoft XNA Framework wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Microsoft XNA Framework >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -2014,7 +1761,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                      Microsoft XNA Framework                                          -
 echo -                                                                                                       -
-echo -                                         wird Installiert                                              -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2025,9 +1772,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-winget install Microsoft.XNARedist --force
-echo [%time% ] - Microsoft XNA Framework wurde Installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Microsoft.XNARedist
+echo [%time% ] - Microsoft XNA Framework has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+title Installing DirectX
 cls
 :JavaChoice
 title Java
@@ -2042,11 +1790,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
-echo -                                              Java                                                     -
+echo -                                       Do you want to install                                          -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
+echo -                                             Java                                                      -
+echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2057,16 +1805,16 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Java Installieren [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :Java
+set /P c= Install Java [Y] skip [N] :
+if /I "%c%" EQU "Y" goto :Java
 if /I "%c%" EQU "N" goto :Javano
 goto :JavaChoice
 :Javano
-echo [%time% ] - Java wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Java will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :OpenALchoice
 :Java
-title Java wird Installiert
+title Installing Java
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -2082,7 +1830,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                             Java                                                      -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2093,10 +1841,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - Java wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing Java >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-winget install Oracle.JavaRuntimeEnvironment --force
-echo [%time% ] - Java wurde installiert -- Erweiteter installations Log befindet sich in: "C:\Windows\DirectX.log" >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget install Oracle.JavaRuntimeEnvironment
+echo [%time% ] - Java has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :OpenALchoice
@@ -2112,11 +1860,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
-echo -                                              OpenAL                                                   -
+echo -                                       Do you want to install                                          -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
+echo -                                             OpenAL                                                    -
+echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2127,16 +1875,16 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= OpenAL Installieren [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :OpenAL
+set /P c= Install OpenAL [Y] skip [N] :
+if /I "%c%" EQU "Y" goto :OpenAL
 if /I "%c%" EQU "N" goto :OpenALno
 goto :OpenALchoice
 :OpenALno
-echo [%time% ] - OpenAL wird nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - OpenAL will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :UpdateChoice
 :OpenAL
-title OpenAL wird Installiert
+title Installing OpenAL
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -2152,7 +1900,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                             OpenAL                                                    -
 echo -                                                                                                       -
-echo -                                        wird Installiert                                               -
+echo -                                           Installing                                                  -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2163,14 +1911,14 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - OpenAL wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Installing OpenAL >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 C:\Users\Public\Downloads\VC\oalinst.exe /s
 Timeout 4 /nobreak >nul 2>&1
-echo [%time% ] - OpenAL wurde installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - OpenAL has been installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 :UpdateChoice
-title Updating UWPs
+title UWP Apps aktualisieren
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -2182,11 +1930,11 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                            M”chtest du                                                -
 echo -                                                                                                       -
-echo -                                            UWP Updates                                                -
+echo -                                       Do you want to update                                           -
 echo -                                                                                                       -
-echo -                                           Installieren?                                               -
+echo -                                          UWP Apps?                                                    -
+echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2197,86 +1945,16 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Updates installieren [J] šberspringen [N] :
+set /P c= Install updates [Y] skip [N] :
 if /I "%c%" EQU "J" goto :Update
 if /I "%c%" EQU "N" goto :Updateno
 goto :UpdateChoice
 :Updateno
-echo [%time% ] - UWP Updates werden nicht installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :SFCChoice
-:Update
-title UWP Apps werden aktualisiert
-cls
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           UWP Updates                                                 -
-echo -                                                                                                       -
-echo -                                        werden Installiert                                             -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - UWP Apps werden aktualisiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-winget upgrade --all
-echo [%time% ] - UWP Apps wurden erfolgreich installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-cls
-:SFCChoice
-title SFC Scan
-cls
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                         M”chtest du zuletzt                                           -
-echo -                                                                                                       -
-echo -                                          einen Systemscan                                             -
-echo -                                                                                                       -
-echo -                                            durchhren?                                                -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                           (c)Manily                                                   -
-echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-set /P c= Systemscan durchfhren [J] šberspringen [N] :
-if /I "%c%" EQU "J" goto :SFC
-if /I "%c%" EQU "N" goto :SFCno
-goto :SFCChoice
-:SFCno
-echo [%time% ] - System scan wird bersprungen >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - UWP updates will not be installed >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :ENDE
-:SFC
-title SFC Scan l„uft
+:Update
+title Updating in progress
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
@@ -2290,9 +1968,9 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                         SFC System Scan                                               -
+echo -                                           Updating                                                    -
 echo -                                                                                                       -
-echo -                                         wird ausgefhrt                                               -
+echo -                                           UWP apps                                                    -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2303,14 +1981,14 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - SFC Systemscan wird ausgefhrt >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - updating UWP apps >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-sfc /scannow
-echo [%time% ] - Systemscan erfolgreich abgeschlossen >>"%userprofile%\Downloads\Runtime installer Log.log"
+winget upgrade --all
+echo [%time% ] - UWP apps have been succesfully updated >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :ENDE
-title Abgeschlossen!
+title Installation completed!
 color 2
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -2320,110 +1998,69 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                     Instalation abgeschlossen                                         -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                   Alle Runtimes wurden Installiert                                    -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                Du kannst deinen PC jetzt neustarten [J]                               -
 echo -                                                                                                       -
-echo -                                         Oder sp„ter [N]                                               -
+echo -                                      Installation completed                                           -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                                                                                       -
+echo -                                You can Restart your PC now [Y]                                        -
+echo -                                                                                                       -
+echo -                                           Or Later [N]                                                -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo =         INSTALLATION ABGESCHLOSSEN      = >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo =            INSTALLATION COMPLETED       = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo ------------------------------------------- >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo =             CLEANUP BEGINNT             = >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo =                CLEANUP START            = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-del C:\Users\Public\Downloads\VC /s /q >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -                                         -
-echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo =           CLEANUP ABGESCHLOSSEN         = >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo ------------------------------------------- >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\VC_110_UWP.exe >nul 2>&1
+echo [%time% ] - "VC_110_UWP.exe" will be deleted >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo [%time% ] - Die Instalation wurde am %Date% um %time% Abgeschlossen >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\VC_120_UWP.exe >nul 2>&1
+echo [%time% ] - "VC_120_UWP.exe" will be deleted >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\VC_140_UWP.appx >nul 2>&1
+echo [%time% ] - "VC_140_UWP.appx" will be deleted >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\DirectX_UWP.appx >nul 2>&1
+echo [%time% ] - "DirectX_UWP.appx" will be deleted >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+del C:\Users\Public\Downloads\VC\oalinst.exe >nul 2>&1
+echo [%time% ] - "oalinst.exe" will be deleted >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo =               CLEANUP COMPLETED         = >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - The installation was completed on %Date% by %time% >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -                 LOG ENDE                - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -                  LOG END                - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -                  Manily                 - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -                   Manily                - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -  Support: https://github.com/Manily04   - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo -   Support: https://github.com/Manily04  - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
-Copy "%userprofile%\Downloads\Runtime installer Log.log" "%temp%" >nul 2>&1
-set /P c= M”chtest du deinen PC jetzt neustarten [J] Fenster schlieáen [N] :
-if /I "%c%" EQU "J" goto :Res
+copy "%userprofile%\Downloads\Runtime installer Log.log" "%temp%" >nul 2>&1
+set /P c= Do you want to restart your PC now [Y] close window [N] :
+if /I "%c%" EQU "Y" goto :Res
 if /I "%c%" EQU "N" goto :Close
 goto :Close
 :Res
-shutdown /r /t 15 /c "Neustart um „nderungen an Runtimes zu bernehmen"
-cls
-echo "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                             Vielen Dank fr die Verwendung dieses Tools                               -"
-echo "-                                                                                                       -"
-echo "-                                                ^.^                                                    -"
-echo "-                                                                                                       -"
-echo "-                                 Du kannst dieses Fenster nun schlieáen                                -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                           (c)Manily                                                   -"
-echo "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-"
-del "C:\Users\Public\Documents\VC\install.bat" >nul 2>&1
+shutdown /r /t 15 /c "Restart PC to apply changes to runtimes"
+exit
 :Close
-cls
-echo "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                             Vielen Dank fr die Verwendung dieses Tools                               -"
-echo "-                                                                                                       -"
-echo "-                                                ^.^                                                    -"
-echo "-                                                                                                       -"
-echo "-                                 Du kannst dieses Fenster nun schlieáen                                -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                                                                                       -"
-echo "-                                           (c)Manily                                                   -"
-echo "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-"
-del "C:\Users\Public\Documents\VC\install.bat" >nul 2>&1
+exit
