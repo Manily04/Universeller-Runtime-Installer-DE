@@ -519,7 +519,7 @@ goto :2013x86N
 )
 :2013x86N
 winget install Microsoft.VCRedist.2013.x86
-goto :2010x64Success
+goto :2013x86Success
 :2013x86E
 c:\users\public\downloads\VC\VC2013x86.exe /quiet
 if %errorlevel% LEQ 0 goto :2013x86Success else goto :2013x86Fail
@@ -578,7 +578,7 @@ goto :2022x86
 :2013x64Success
 echo [%time% ] - Visual C Redist 2013 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x64
+:2022x86
 title Fortschritt: 75 Prozent
 cls
 echo [%time% ] - Visual C Redist 2022 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -626,7 +626,7 @@ goto :2022x64
 :2022x86Success
 echo [%time% ] - Visual C Redist 2022 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x64
+:2022x64
 title Fortschritt: 90 Prozent
 cls
 echo [%time% ] - Visual C Redist 2022 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -670,11 +670,11 @@ if %errorlevel% LEQ 0 goto :2022x64Success else goto :2022x64Fail
 :2022x64Fail
 echo [%time% ] - Bei der Installation von Visual C Redist 2022 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2022x86
+goto :VCFinish
 :2022x64uccess
 echo [%time% ] - Visual C Redist 2022 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x64
+:VCFinish
 title Fortschritt: 100 Prozent
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -1515,7 +1515,7 @@ goto :2013x86N2
 )
 :2013x86N2
 winget install Microsoft.VCRedist.2013.x86
-goto :2010x64Success2
+goto :2013x86Success2
 :2013x86E2
 c:\users\public\downloads\VC\VC2013x86.exe /quiet
 if %errorlevel% LEQ 0 goto :2013x86Success2 else goto :2013x86Fail2
@@ -1523,7 +1523,7 @@ if %errorlevel% LEQ 0 goto :2013x86Success2 else goto :2013x86Fail2
 echo [%time% ] - Bei der Installation von Visual C Redist 2013 x86 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 goto :2013x642
-:2013x86Success22
+:2013x86Success2
 echo [%time% ] - Visual C Redist 2013 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 :2013x642
@@ -1574,7 +1574,7 @@ goto :2022x862
 :2013x64Success2
 echo [%time% ] - Visual C Redist 2013 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x642
+:2022x862
 title Fortschritt: 75 Prozent
 cls
 echo [%time% ] - Visual C Redist 2022 x86 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -1622,7 +1622,7 @@ goto :2022x642
 :2022x86Success2
 echo [%time% ] - Visual C Redist 2022 x86 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x642
+:2022x642
 title Fortschritt: 90 Prozent
 cls
 echo [%time% ] - Visual C Redist 2022 x64 wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -1666,11 +1666,11 @@ if %errorlevel% LEQ 0 goto :2022x64Success2 else goto :2022x64Fail2
 :2022x64Fail2
 echo [%time% ] - Bei der Installation von Visual C Redist 2022 x64 ist ein Fehler aufgetreten -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-goto :2022x862
-:2022x64uccess2
+goto :VCFinish2
+:2022x64success2
 echo [%time% ] - Visual C Redist 2022 x64 wurde erfolgreich installiert -- Erweiteter installations Log befindet sich in: "%temp%" >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-:2013x642
+:VCFinish2
 title Fortschritt: 100 Prozent
 cls
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -2362,7 +2362,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                            Möchtest du                                                -
 echo -                                                                                                       -
-echo -                                            UWP Updates                                                -
+echo -                            Software Updates für alle nicht aktuellen Programme                        -
 echo -                                                                                                       -
 echo -                                           Installieren?                                               -
 echo -                                                                                                       -
@@ -2398,7 +2398,7 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                           UWP Updates                                                 -
+echo -                                        Software Updates                                               -
 echo -                                                                                                       -
 echo -                                        werden Installiert                                             -
 echo -                                                                                                       -
@@ -2411,10 +2411,10 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-echo [%time% ] - UWP Apps werden aktualisiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Software Updates werden installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 winget upgrade --all
-echo [%time% ] - UWP Apps wurden erfolgreich installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Software Updates wurden erfolgreich installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 :SFCChoice
