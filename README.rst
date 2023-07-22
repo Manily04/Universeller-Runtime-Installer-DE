@@ -1,6 +1,6 @@
 .. image:: https://img.shields.io/badge/-Download-brightgreen
    :alt: Download
-   :target: https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/download/v12.1/Universeller.Runtime.installer.exe
+   :target: https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/download/v13/Universeller.Runtime.installer.exe
 
 .. image:: https://img.shields.io/github/downloads/Manily04/Universeller-Runtime-Installer-DE/total?label=Downloads
    :alt: Total Downloads
@@ -12,7 +12,7 @@ Dieser Installer erlaubt es, die neusten Visual C++ Runtime aller Jahre (2008-20
 
 Updates
 ===============================
-Die `neuste Version <https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest>`_ lädt alle runtimes selstständig herunter, heisst, es wird beim ausführen des Tools immer die neuste verfügbare Version der Runtime installiert. (Eine Internet verbindung ist für `versionen über v4 <https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest>`_ vorrausgesetzt)
+Die `neuste Version <https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest>`_ lädt alle runtimes selstständig herunter, heißt, es wird beim ausführen des Tools immer die neuste verfügbare Version der Runtime installiert. (Eine Internet verbindung ist für `versionen über v4 <https://github.com/Manily04/Universeller-Runtime-Installer-DE/releases/latest>`_ vorrausgesetzt)
 
 Offline Setup
 ===============================
