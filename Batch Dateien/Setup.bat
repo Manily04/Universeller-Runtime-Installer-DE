@@ -156,4 +156,9 @@ del start.bat
 echo [%time% ] - Die originale "start.bat" Datei wurde gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 copy VCDownloader.bat C:\Users\Public\Downloads\VC >nul 2>&1
+echo [%time% ] - Die Datei "VCDownloader.bat" wurde nach c:\Users\Public\Downloads\VC Kopiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del VCDownloader.bat
+echo [%time% ] - Die originale "VCDownloader.bat" Datei wurde gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+
