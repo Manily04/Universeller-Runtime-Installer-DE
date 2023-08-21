@@ -10,6 +10,8 @@ echo -                                         - >>"%userprofile%\Downloads\Runt
 cls
 echo [%time% ] - Winget wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo [%time% ] - Winget wird installiert >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -1082,7 +1084,7 @@ echo -                                           (c)Manily                      
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - SFC Systemscan wird ausgefhrt >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-sfc /scannow
+%windir%\system32\sfc.exe /scannow
 echo [%time% ] - Systemscan erfolgreich abgeschlossen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
@@ -2368,7 +2370,7 @@ echo -                                           Installieren?                  
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -           !!    Dauer von Anzahl der Programme und Internetgeschwindigkeit abh„ngig    !!             -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2404,9 +2406,9 @@ echo -                                        werden Installiert                
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
+echo -           !!    Dauer von Anzahl der Programme und Internetgeschwindigkeit abh„ngig    !!             -
 echo -                                                                                                       -
-echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                 !!     Um eine Installation zu berspringen drcke: STRG + C     !!                   -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                           (c)Manily                                                   -
@@ -2432,13 +2434,13 @@ echo -                                                                          
 echo -                                                                                                       -
 echo -                                         M”chtest du zuletzt                                           -
 echo -                                                                                                       -
-echo -                                          einen Systemscan                                             -
+echo -                                         einen SFC Systemscan                                          -
 echo -                                                                                                       -
 echo -                                            durchhren?                                                -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -   ! SFC (system file checker) ist Windows integriert und sucht nach besch„digten Windows Dateien !    -
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
@@ -2483,7 +2485,7 @@ echo -                                           (c)Manily                      
 echo -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 echo [%time% ] - SFC Systemscan wird ausgefhrt >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-sfc /scannow
+%windir%\system32\sfc.exe /scannow
 echo [%time% ] - Systemscan erfolgreich abgeschlossen >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
@@ -2507,7 +2509,7 @@ echo -                                   Alle Runtimes wurden Installiert       
 echo -                                                                                                       -
 echo -                                                                                                       -
 echo -                                                                                                       -
-echo -                                                                                                       -
+echo -                     Bitte berprfe in deinem Download Ordner die Log-Datei nach fehlern              -
 echo -                                                                                                       -
 echo -                                Du kannst deinen PC jetzt neustarten [J]                               -
 echo -                                                                                                       -
@@ -2528,7 +2530,7 @@ echo =             CLEANUP BEGINNT             = >>"%userprofile%\Downloads\Runt
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del C:\Users\Public\Downloads\VC /s /q >>"%userprofile%\Downloads\Runtime installer Log.log"
-echo -                                         -
+echo -                                         - >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =           CLEANUP ABGESCHLOSSEN         = >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"

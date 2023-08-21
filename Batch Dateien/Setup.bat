@@ -4,8 +4,10 @@ chcp 850
 echo [%time% ] - log start >"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 mkdir C:\Users\Public\Downloads\VC >nul 2>&1
-mkdir C:\Users\Public\Documents\VC >nul 2>&1
 echo [%time% ] - Ordner erstellt in c:\Users\Public\Downloads\ Ordner Name: "VC" Pfad: c:\Users\Public\Downloads\VC >>"%userprofile%\Downloads\Runtime installer Log.log"
+echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
+mkdir C:\Users\Public\Documents\VC >nul 2>&1
+echo [%time% ] - Ordner erstellt in c:\Users\Public\Documents\ Ordner Name: "VC" Pfad: c:\Users\Public\Documents\VC >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 cls
 echo =                                         = >>"%userprofile%\Downloads\Runtime installer Log.log"
@@ -161,4 +163,3 @@ echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
 del VCDownloader.bat
 echo [%time% ] - Die originale "VCDownloader.bat" Datei wurde gelöscht >>"%userprofile%\Downloads\Runtime installer Log.log"
 echo - >>"%userprofile%\Downloads\Runtime installer Log.log"
-
